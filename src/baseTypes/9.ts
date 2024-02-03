@@ -4,14 +4,14 @@
 type myObg = {
   title: string,
   likes: number,
-  accounts: [string, string | undefined, string | undefined],
+  accounts: [string, string?, string?],
   status: string,
   details?: {
-    createAt: string,
-    updateAt: string,
+    createAt: Date,
+    updateAt: Date,
   }
 }
-const page1 = {
+const page1: myObg = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
@@ -22,7 +22,7 @@ const page1 = {
   }
 }
 
-const page2 = {
+const page2: myObg = {
   title: 'Python or Js',
   likes: 5,
   accounts: ['Alex'],
