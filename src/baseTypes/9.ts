@@ -1,7 +1,16 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
-
+type myObg = {
+  title: string,
+  likes: number,
+  accounts: [string, string | undefined, string | undefined],
+  status: string,
+  details?: {
+    createAt: string,
+    updateAt: string,
+  }
+}
 const page1 = {
   title: 'The awesome page',
   likes: 100,
@@ -20,4 +29,4 @@ const page2 = {
   status: 'close',
 }
 
-export {};
+export { };
