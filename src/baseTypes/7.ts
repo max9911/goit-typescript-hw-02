@@ -22,7 +22,9 @@ function isWeekend(day): boolean {
   return false
 }
 
-let day: days = days.F
+let day: days
+
+day = days.F
 isWeekend(day)
 
 day = days.SU
